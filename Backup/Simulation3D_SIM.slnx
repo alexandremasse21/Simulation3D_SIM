@@ -1,0 +1,4 @@
+﻿<Solution>
+  <Project Path="AssetCleaner.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>
