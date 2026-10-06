@@ -4,6 +4,8 @@ public class Obstacle : MonoBehaviour
 {
     [Tooltip("Matériau appliqué à l'obstacle une fois touché")]
     [SerializeField] private Material _hitMaterial;
+    [Tooltip("Secondes de pénalité quand le joueur touche cet obstacle")]
+    [SerializeField] private int _penaltySeconds = 2;
 
     private Renderer _renderer;
     private GameManager _gameManager;
@@ -28,6 +30,6 @@ public class Obstacle : MonoBehaviour
 
         _wasHit = true;
         _renderer.sharedMaterial = _hitMaterial;
-        _gameManager.RegisterHit();
+        _gameManager.RegisterHit(_penaltySeconds);
     }
 }
