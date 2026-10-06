@@ -527,6 +527,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   _hitMaterial: {fileID: 0}
+  _penaltySeconds: 2
 --- !u!54 &230426309
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1032,6 +1033,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   _hitMaterial: {fileID: 0}
+  _penaltySeconds: 2
 --- !u!54 &368293414
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1563,6 +1565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   _hitMaterial: {fileID: 0}
+  _penaltySeconds: 2
 --- !u!54 &527320586
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2170,6 +2173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   _hitMaterial: {fileID: 0}
+  _penaltySeconds: 2
 --- !u!54 &747077498
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3611,6 +3615,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Obstacle
   _hitMaterial: {fileID: 0}
+  _penaltySeconds: 2
 --- !u!54 &2038792654
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3726,6 +3731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2044985035}
   - component: {fileID: 2044985036}
+  - component: {fileID: 2044985037}
   m_Layer: 0
   m_Name: FinishZone
   m_TagString: Untagged
@@ -3770,6 +3776,18 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 2
   m_Center: {x: -0.2, y: 1, z: 0}
+--- !u!114 &2044985037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2044985034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 939eb136b393a2f4a9839599e0d8c77d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FinishZone
 --- !u!1001 &2045270903
 PrefabInstance:
   m_ObjectHideFlags: 0
