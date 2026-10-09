@@ -2,13 +2,7 @@ using UnityEngine;
 
 public class FinishZone : MonoBehaviour
 {
-    private GameManager _gameManager;
     private bool _isReached;
-
-    private void Start()
-    {
-        _gameManager = FindAnyObjectByType<GameManager>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -18,7 +12,7 @@ public class FinishZone : MonoBehaviour
         }
 
         _isReached = true;
-        _gameManager.CompleteLevel();
+        GameManager.Instance.CompleteLevel();
 
         // Le joueur a récupéré le burger : is disparaît de la scène
         gameObject.SetActive(false);
